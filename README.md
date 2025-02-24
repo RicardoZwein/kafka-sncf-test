@@ -4,7 +4,7 @@
 
 ### 1️⃣ Lancer l’environnement Kafka
 
-Avant tout, il faut démarrer **Kafka** et **Zookeeper**.\
+Avant tout, il faut démarrer **Kafka** et **Zookeeper.**\
 Tout est déjà configuré dans **`docker-compose.yml`**, donc un simple :
 
 ```bash
@@ -79,7 +79,7 @@ Ce projet n’a pas vocation à être utilisé en production, mais sert à démo
 
 ## 📒 Et après ?
 
-- Actuellement, on récupère tous les retards, mais on pourrait affiner en **filtrant par ligne, gare ou destination**.
+- Actuellement, on récupère tous les retards, mais on pourrait affiner en **filtrant par gare, par exemple.**
 - Ajouter un **stockage persistant** (comme **PostgreSQL** ou **DuckDB**) pour historiser les retards.
 - Pourquoi pas un **modèle de prédiction** des retards à partir des historiques ?
 
