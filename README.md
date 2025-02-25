@@ -8,7 +8,7 @@ Pour explorer cette question, j’ai voulu analyser des données publiques en te
 
 Pour ce projet, j’ai conçu un dashboard qui récupère des données en streaming, mises à jour toutes les 2 minutes en raison des limites du GTFS-RT TU. J’y propose également quelques pistes d’optimisation pour améliorer le suivi des données.
 
-Les premières observations montrent que les retards sont peu fréquents, suggérant que nos biais cognitifs joueraient un rôle important dans notre perception de la ponctualité des TER.
+Les premières observations montrent que les retards sont peu fréquents, ce qui pourrait indiquer que nos biais cognitifs joueraient un rôle important dans notre perception de la ponctualité des TER.
 
 <br>
 
@@ -81,7 +81,7 @@ http://127.0.0.1:8050
 
 ## 🎯 Objectif ?
 
-Ce projet n’a pas vocation à être utilisé en production, mais sert à démontrer comment Kafka peut être utilisé pour du traitement de flux en temps réel, et accessoirement, c'est un petit exercice qui m'a permis de me familiariser avec Kafka en dehors de lectures théoriques...!
+Ce projet n’a pas vocation à être utilisé en production, mais illustre comment Kafka peut servir au traitement de flux en temps réel. C'était aussi une bonne occasion de me familiariser avec Kafka au-delà des lectures théoriques...!
 
 <br>
 
