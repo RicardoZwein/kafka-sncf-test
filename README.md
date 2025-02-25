@@ -40,7 +40,7 @@ Ce script va récupérer les mises à jour **GTFS-RT** et les envoyer dans le to
 ### 3️⃣ Démarrer le Consumer + Dashboard
 
 Une fois les messages envoyés, il faut un **consumer** pour les traiter et les afficher.\
-Lance-le avec :
+Lancez-le avec :
 
 ```bash
 python realtime_train_delays.py
@@ -52,7 +52,7 @@ Celui-ci :
 - Met à jour un **dashboard en live** via **Plotly Dash**
 - Affiche un **histogramme des retards actuels**
 
-Accède ensuite à l’interface via ton navigateur :
+Accèdez ensuite à l’interface via votre navigateur :
 
 ```
 http://127.0.0.1:8050
