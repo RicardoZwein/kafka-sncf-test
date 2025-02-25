@@ -12,6 +12,8 @@ Si on fait tourner ce projet assez longtemps sur une machine assez performante (
 
 J'ai pris le parti pris de faire un petit dashboard en "temps réel" (mis à jour toutes les 2 minutes en raison des limites du GTFS-RT TU), histoire de pouvoir observer les évolutions en temps réel.
 
+<br>
+
 ## 🚀 Comment ça marche ?
 
 ### 1️⃣ Lancer l’environnement Kafka
@@ -25,7 +27,6 @@ docker-compose up -d
 
 ... et c’est parti ! Kafka tourne en tâche de fond.
 
----
 
 ### 2️⃣ Démarrer le Producteur
 
@@ -37,7 +38,6 @@ python producer.py
 
 Ce script va récupérer les mises à jour **GTFS-RT** et les envoyer dans le topic **`sncf-realtime`**.
 
----
 
 ### 3️⃣ Démarrer le Consumer + Dashboard
 
@@ -60,9 +60,9 @@ Accède ensuite à l’interface via ton navigateur :
 http://127.0.0.1:8050
 ```
 
----
 *(Le lien s'affichera dans le Terminal au lancement du script.)*
 
+<br>
 
 ## 📊 Données visualisées
 
@@ -70,7 +70,7 @@ http://127.0.0.1:8050
 ✅ **Mise à jour toutes les 2 minutes** (fréquence des messages Kafka)\
 ✅ **Histogramme dynamique** qui évolue en fonction des données entrantes
 
----
+<br>
 
 ## 🏢 Tech Stack
 
@@ -79,15 +79,13 @@ http://127.0.0.1:8050
 ⚫ **Python** (`kafka-python`, `dash`, `plotly`, `pandas`, etc.)\
 ⚫ **GTFS-RT** pour les données de transport en temps réel
 
----
+<br>
 
-🎯 Objectif ?
-
-
+## 🎯 Objectif ?
 
 Ce projet n’a pas vocation à être utilisé en production, mais sert à démontrer comment Kafka peut être utilisé pour du traitement de flux en temps réel, et accessoirement, c'est un petit exercice qui m'a permis de me familiariser avec Kafka en dehors de lectures théoriques...!
 
----
+<br>
 
 ## 📒 Et après ?
 
@@ -95,6 +93,7 @@ Ce projet n’a pas vocation à être utilisé en production, mais sert à démo
 - Ajouter un **stockage persistant** (comme **PostgreSQL** ou **DuckDB**) pour historiser les retards.
 - Pourquoi pas un **modèle de prédiction** des retards à partir des historiques ?
 
+<br>
 
 ## 🗃️ Data Source 
 Réseau national TER SNCF : https://transport.data.gouv.fr/datasets/horaires-des-lignes-ter-sncf
