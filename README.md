@@ -1,4 +1,16 @@
-# 🚆 Suivi en temps réel des retards SNCF avec Kafka
+# 🚆 Suivi en temps réel des retards des TER SNCF avec Kafka
+*Ce projet est un exercice personnel et n'est pas affilié à la SNCF.*
+
+## 🔎 Contexte
+On me dit souvent que la SNCF a tendance à être en retard un peu trop souvent. Est-ce vrai, ou est-ce simplement un effet de saillance qui nous pousse à remarquer davantage les retards que les trains à l’heure ? (Spoiler Alert, c'est bel et bien un effet de saillance !)
+
+Dans le doute, je me suis dit que j'allais faire ce que je fais de mieux...Et m'amuser avec des données. 
+
+On va setup un process qui permettrait de vérifier notre hypothèse, en prenant des données en temps réel de chez la SNCF ! 
+
+Si on fait tourner ce projet assez longtemps sur une machine assez performante (ou si on prend simplement en compte les recommendations que j'ai posées en fin de projet pour une version plus optimisée), on peut répondre à cette question avec assez de détail, mais les résultats que j'ai obtenus étaient déjà intéressants.
+
+J'ai pris le parti pris de faire un petit dashboard en "temps réel" (mis à jour toutes les 2 minutes en raison des limites du GTFS-RT TU), histoire de pouvoir observer les évolutions en temps réel.
 
 ## 🚀 Comment ça marche ?
 
@@ -83,3 +95,6 @@ Ce projet n’a pas vocation à être utilisé en production, mais sert à démo
 - Ajouter un **stockage persistant** (comme **PostgreSQL** ou **DuckDB**) pour historiser les retards.
 - Pourquoi pas un **modèle de prédiction** des retards à partir des historiques ?
 
+
+## 🗃️ Data Source 
+Réseau national TER SNCF : https://transport.data.gouv.fr/datasets/horaires-des-lignes-ter-sncf
