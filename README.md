@@ -1,4 +1,4 @@
-# 🚆 Suivi en temps réel des retards des TER SNCF avec Kafka
+# 🚆 Suivi en temps réel de la ponctualité des TER SNCF avec Kafka
 *Ce projet est un exercice personnel et n'est pas affilié à la SNCF.*
 
 ## 🔎 Contexte
